@@ -1,9 +1,10 @@
 app:
-  name: library-k8s
-  profile:
-  replicaCount: 1
-  hostAliases: []
-  image: ${CONTAINER_REGISTRY_URI}/test-img:latest
-  resources: {}
-  service:
+    name: library-k8s
+    profile:
+    replicaCount: 1
+    hostAliases: []
+    image: /test-img:latest
+    # 예시) test-project.kr-central-1.kcr.dev/hands-on/test-img:latest
+    resources: {}
+    service:
     type: LoadBalancer
